@@ -1,0 +1,27 @@
+.ba-description {
+    margin-left: 10px;
+    width: 100%;
+    background-color: #303030;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.ba-description__about {
+    display: flex;
+    width: 100%;
+}
+
+.ba-description__about-info {
+    width: 100%;
+}
+.ba-description__about-title {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #808080;
+}
+.ba-description__about-latin {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #808080;
+}

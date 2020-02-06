@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.ba-app {
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+}
+.ba-app__answers {
+    display: flex;
+}
+.ba-app__btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #008866;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

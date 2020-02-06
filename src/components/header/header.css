@@ -1,0 +1,30 @@
+.ba-header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ba-header__top-logo {
+    width: 200px;
+}
+.ba-header__top-score > * {
+    padding-right: 5px;
+}
+
+.ba-header__elements {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #008866;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.ba-header__element {
+    width: 100%;
+    padding: 5px;
+}
+
