@@ -21,3 +21,8 @@
     border: none;
     border-radius: 5px;
 }
+
+button:disabled {
+    background: transparent;
+    border: 1px solid #008866;
+}

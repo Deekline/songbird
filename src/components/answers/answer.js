@@ -1,24 +1,26 @@
-import React, { Component } from "react";
+import React from "react";
 
-import "./answer.css"
-
-
-export default class Answer extends Component {
-
-    render() {
+import "./answer.css";
 
 
-        return (
-            <div className='ba-answer'>
-                <ul className='ba-answer__list'>
-                    <li className="ba-answer__list-item">Voron</li>
-                    <li className="ba-answer__list-item">Juravel</li>
-                    <li className="ba-answer__list-item">Sinitsa</li>
-                    <li className="ba-answer__list-item">Lastochka</li>
-                    <li className="ba-answer__list-item">Kukushka</li>
-                    <li className="ba-answer__list-item">Ovca</li>
-                </ul>
-            </div>
-        )
-    }
-}
+export const Answer = ( props ) => {
+
+    const { birdsData, handleAnswer} = props;
+
+
+    return (
+        <div className='ba-answer'>
+            <ul className='ba-answer__list'>
+                { birdsData.map( ( el ) => {
+                    return (
+                        <li className="ba-answer__list-item"
+                            key={ el.id }
+                            id={ el.id }
+                            onClick={ handleAnswer }>
+                            { el.name }</li>
+                    );
+                } ) }
+            </ul>
+        </div>
+    );
+};

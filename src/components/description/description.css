@@ -5,6 +5,7 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     padding: 20px;
 }
 .ba-description__about {
@@ -14,6 +15,9 @@
 
 .ba-description__about-info {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .ba-description__about-title {
     padding-bottom: 10px;
