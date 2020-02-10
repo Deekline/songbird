@@ -10,25 +10,22 @@ export const CurrentQuestion = ( props ) => {
     const [ image, setImage ] = useState( img );
 
 
-    console.log(isCorrect);
-
-
     useEffect( () => {
         if ( isCorrect ) {
             setImage( question.image );
         }
 
-    }, [isCorrect] );
+    }, [isCorrect, question] );
 
 
     return (
         <div className="ba-question">
             <div className="ba-question">
-                <img src={ image } alt="unknown" className="ba-image"/>
+                {isCorrect ? <img src={ image } alt="unknown" className="ba-image"/> : <img src={ img } alt="unknown" className="ba-image"/>}
             </div>
             <div className="ba-question__main">
                 <div className="ba-question__main-title">
-                    { isCorrect ? <h1>{ question.name }</h1> : <h1>*********</h1> }
+                    { isCorrect ? <h1> { question.name }</h1> : <h1>*********</h1> }
                 </div>
                 <div className="ba-question__main-voice">
                     <ReactAudioPlayer src={ question.audio } controls/>

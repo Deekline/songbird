@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./header.css";
 import logo from "./logo.4f82cd73.svg";
 
@@ -6,6 +6,14 @@ import logo from "./logo.4f82cd73.svg";
 export const Header = ( props ) => {
 
     const { score, stageId } = props;
+    const arr = Array.from( document.querySelectorAll( '.ba-header__element' ) );
+
+    arr.map( el => {
+        if ( Number(stageId) === Number(el.id) ) {
+            return el.classList.add( 'active' );
+        }
+        return el.classList.remove( 'active' );
+    } );
 
 
     return (

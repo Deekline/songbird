@@ -5,7 +5,7 @@ import "./answer.css";
 
 export const Answer = ( props ) => {
 
-    const { birdsData, handleAnswer} = props;
+    const { birdsData, handleAnswer, } = props;
 
 
     return (
@@ -17,6 +17,7 @@ export const Answer = ( props ) => {
                             key={ el.id }
                             id={ el.id }
                             onClick={ handleAnswer }>
+                            <span className='ba-answer__indicator'/>
                             { el.name }</li>
                     );
                 } ) }

@@ -29,3 +29,7 @@
     margin-bottom: 10px;
     border-bottom: 1px solid #808080;
 }
+.ba-answer__default {
+    display: block;
+    margin-bottom: 10px;
+}

@@ -24,7 +24,7 @@ export const Description = ( props ) => {
         }
         setData( renderData );
 
-    }, [ answerId ] );
+    }, [ answerId, renderData] );
 
 
 
@@ -46,7 +46,8 @@ export const Description = ( props ) => {
 
     const defaultInformation = (
         <div>
-            No Info
+            <span className='ba-answer__default'>Послушайте плеер</span>
+            <span className='ba-answer__default'>Выберите птицу</span>
         </div>
     );
 

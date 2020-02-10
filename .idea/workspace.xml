@@ -3,14 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ae7ba399-daf3-4ba7-ba39-e7ff332db387" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/answers/answer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/answers/answer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/answers/answer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/answers/answer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/current-question/current-question.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/current-question/current-question.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/description/description.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/description/description.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/description/description.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/description/description.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +93,7 @@
       <workItem from="1581154079478" duration="2224000" />
       <workItem from="1581236442430" duration="914000" />
       <workItem from="1581256011606" duration="1294000" />
-      <workItem from="1581264442493" duration="4444000" />
+      <workItem from="1581264442493" duration="12100000" />
     </task>
     <servers />
   </component>
@@ -106,36 +105,29 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1581012316737" />
-    <state width="1419" height="226" key="GridCell.Tab.0.bottom" timestamp="1581264460872">
+    <state width="1419" height="226" key="GridCell.Tab.0.bottom" timestamp="1581363634019">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="226" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581264460872" />
+    <state width="1419" height="226" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581363634019" />
     <state width="1419" height="226" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1581253910999" />
-    <state width="1419" height="226" key="GridCell.Tab.0.center" timestamp="1581264460871">
+    <state width="1419" height="226" key="GridCell.Tab.0.center" timestamp="1581363634018">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="226" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1581264460871" />
+    <state width="1419" height="226" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1581363634018" />
     <state width="1419" height="226" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1581253910998" />
-    <state width="1419" height="226" key="GridCell.Tab.0.left" timestamp="1581264460871">
+    <state width="1419" height="226" key="GridCell.Tab.0.left" timestamp="1581363634017">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="226" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1581264460871" />
+    <state width="1419" height="226" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1581363634017" />
     <state width="1419" height="226" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1581253910997" />
-    <state width="1419" height="226" key="GridCell.Tab.0.right" timestamp="1581264460872">
+    <state width="1419" height="226" key="GridCell.Tab.0.right" timestamp="1581363634018">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="226" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1581264460872" />
+    <state width="1419" height="226" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1581363634018" />
     <state width="1419" height="226" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1581253910998" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/current-question/current-question.js</url>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1581366799939">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1581366799939" />
   </component>
 </project>

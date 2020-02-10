@@ -14,6 +14,7 @@ export default class App extends Component {
 
     state = {
         score: 0,
+        maxScore: 6,
         stageId: 0,
         img: bird,
         birdsData: Data[ 0 ],
@@ -21,6 +22,7 @@ export default class App extends Component {
         question: Data[ 0 ][ this.rnd ],
         correctAnswerId: this.rnd,
         isCorrect: null,
+        isActive: true,
     };
 
 
@@ -29,26 +31,43 @@ export default class App extends Component {
             return {
                 stageId: prevState.stageId + 1,
                 birdsData: Data[ this.state.stageId ],
-                question: Data[ this.state.stageId ][ this.rnd ]
+                question: Data[ this.state.stageId ][ this.rnd ],
+                isCorrect: null,
+                isActive: true,
+                img: bird,
+                answerId: '',
+                color: null,
+                maxScore: 6,
             };
         } );
     };
 
+
+
     handleAnswer = ( event ) => {
-        const targetId = event.target.id ;
+
+        const targetId = event.target.id;
 
         if ( (targetId - 1) === this.state.correctAnswerId ) {
-            document.querySelector('.ba-app__btn').removeAttribute('disabled')
-            this.setState( () => {
+            this.setState( ( prevState ) => {
                 return {
+                    isActive: false,
                     isCorrect: true,
+                    score: prevState.score + this.state.maxScore
                 };
             } );
         }
 
-        this.setState( () => {
+
+        this.setState( ( prevState ) => {
+            if(prevState.maxScore === 0) {
+                return {
+                    answerId: targetId,
+                }
+            }
             return {
-                answerId: targetId
+                answerId: targetId,
+                maxScore: prevState.maxScore - 1
             };
         } );
     };
@@ -57,7 +76,8 @@ export default class App extends Component {
 
         const {
             score, stageId, img, birdsData,
-            answerId, question, isCorrect } = this.state;
+            answerId, question, isCorrect, isActive
+        } = this.state;
 
         return (
             <div className="ba-app">
@@ -66,13 +86,14 @@ export default class App extends Component {
                                  question={ question } isCorrect={ isCorrect }/>
                 <div className='ba-app__answers'>
                     <Answer birdsData={ birdsData }
-                            handleAnswer={ this.handleAnswer }/>
+                            handleAnswer={ this.handleAnswer }
+                            isCorrect={ isCorrect }/>
                     <Description birdsData={ birdsData }
                                  answerId={ answerId }/>
                 </div>
                 <button className="ba-app__btn"
                         onClick={ this.nextLevel }
-                        disabled>
+                        disabled={ isActive }>
                     Next Level
                 </button>
             </div>

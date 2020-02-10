@@ -23,3 +23,17 @@
 .ba-answer__list-item:hover {
     background-color: #808080;
 }
+
+.ba-answer__indicator {
+    background-color: gray;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.correct {
+    background: darkgreen;
+}
+.incorrect {
+    background-color: red;
+}
